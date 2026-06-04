@@ -4,5 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/Vishal-lodhi/",
+  base: process.env.NODE_ENV === "production" ? "/Vishal-lodhi/" : "/",
 });

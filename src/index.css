@@ -333,8 +333,8 @@ html, body, #root {
 .about-section {
   position: relative;
   overflow: hidden;
-    /* use encoded filename to avoid space issues in URLs */
-    background-image: url("/images/about%20background%20image.png");
+    /* use the actual public image filename */
+    background-image: url("/images/about-background-image.png");
     /* show full-bleed cover so the image fills the viewport */
     background-size: cover;
     background-position: center center;
@@ -472,11 +472,10 @@ html, body, #root {
   }
 }
 
-/* On large/HD screens try to use a higher-resolution image if provided at /images/about-highres.png */
+/* On large/HD screens use the same about background image */
 @media (min-width: 1400px) {
   .about-section {
-    /* Place high-res image here if you add it to public/images */
-    background-image: url("/images/about-highres.png");
+    background-image: url("/images/about-background-image.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
