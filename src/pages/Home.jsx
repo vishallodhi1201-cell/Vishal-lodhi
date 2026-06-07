@@ -19,6 +19,8 @@ import {
 } from "react-icons/si";
 
 export default function Home() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   useEffect(() => {
     const starsContainer = document.getElementById("stars");
 
@@ -51,7 +53,7 @@ export default function Home() {
           className="hero-avatar w-72 h-72 md:w-96 md:h-96 rounded-full"
         >
           <img
-            src="/images/profile.jpg"
+            src={`${baseUrl}images/profile.jpg`}
             alt="Vishal"
             className="hero-avatar-image w-full h-full rounded-full object-cover"
           />

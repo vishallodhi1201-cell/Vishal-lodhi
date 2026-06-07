@@ -333,9 +333,6 @@ html, body, #root {
 .about-section {
   position: relative;
   overflow: hidden;
-    /* use the actual public image filename */
-    background-image: url("/images/about-background-image.png");
-    /* show full-bleed cover so the image fills the viewport */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -475,7 +472,6 @@ html, body, #root {
 /* On large/HD screens use the same about background image */
 @media (min-width: 1400px) {
   .about-section {
-    background-image: url("/images/about-background-image.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
